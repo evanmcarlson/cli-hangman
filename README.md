@@ -1,7 +1,7 @@
 # cli-hangman
 A simple command line version of the game Hangman.
 
-To play the game, simply download the code and open a terminal in the location of the file. Type javac Hangman.java to compile the code, and java Hangman to play.
+To play the game, simply download the code and open a terminal in the location of the file. Type 'javac Hangman.java' to compile the code, and 'java Hangman' to play.
 
 The game begins by randomly selecting one of ten phrases and replacing all letter with an asterik (*). Spaces and punctuation are left unhidden.
 

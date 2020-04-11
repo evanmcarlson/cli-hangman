@@ -3,7 +3,7 @@ A simple command line version of the game Hangman that supports two modes: user 
 
 First choose if you would like an AI model to play or if you would like to play.
 To play the game in user mode, simply download the code and open a terminal in the location of the file. Type `javac HangmanUser.java` to compile the code, and `java HangmanUser` to play.
-To play the game in AI mode, simply download the code and open a terminal in the location of the file. Type `javac HangmanAI.java` to compile the code, and `java HangmanAI` to play.
+To play the game in AI mode, simply download the code and open a terminal in the location of the file. Type `javac HangmanAI.java` to compile the code, and `java HangmanAI` to play. Note that this mode of playing requires the creation of a file hangPhrases.txt in the same directory which contains one hangman phrase on each line for the AI model to play.
 
 The game begins by randomly selecting one of ten phrases and replacing all letter with an asterik (*). Spaces and punctuation are left unhidden.
 

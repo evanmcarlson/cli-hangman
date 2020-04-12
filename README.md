@@ -1,10 +1,18 @@
 # cli-hangman
-A simple command line version of the game Hangman that supports two modes: user and AI. 
+A simple command line version of the game Hangman that supports user mode and AI (scripting) mode. 
 
-First choose if you would like an AI model to play or if you would like to play.
-To play the game in user mode, simply download the code and open a terminal in the location of the file. Type `javac HangmanUser.java` to compile the code, and `java HangmanUser` to play.
-To play the game in AI mode, simply download the code and open a terminal in the location of the file. Type `javac HangmanAI.java` to compile the code, and `java HangmanAI` to play. Note that this mode of playing requires the creation of a file hangPhrases.txt in the same directory which contains one hangman phrase on each line for the AI model to play.
+This repository contains two programs: HangmanUser and HangmanAI. 
 
+HangmanUser is an interactive game of hangman populated with predetermined phrases where you guess each letter. 
+
+HangmanAI is a non interactive game of hangman- it is somewhat reminiscent of a HangmanUser scripting mode. This mode is NOT populated with predetmined phrases and instead requires a file-hangPhrases.txt-containing phrases seperated by a newline character (a sample is included).
+
+### getting started
+To play the game in user mode, download the code and open a terminal in the location of the file. Type `javac HangmanUser.java` to compile the code, and `java HangmanUser` to play.
+
+To play the game in AI mode, download the code and open a terminal in the location of the file. Type `javac HangmanAI.java` to compile the code, and `java HangmanAI` to play.
+
+### theory and rules
 The game begins by randomly selecting one of ten phrases and replacing all letter with an asterik (*). Spaces and punctuation are left unhidden.
 
 The user guesses a letter. All occurrences of the letter in the phrase are replaced in the partially hidden phrase.

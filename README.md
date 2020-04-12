@@ -1,7 +1,5 @@
 # cli-hangman
-A simple command line version of the game Hangman that supports user mode and AI (scripting) mode. 
-
-This repository contains two programs: HangmanUser and HangmanAI. 
+This repository contains two programs: HangmanUser and HangmanAI. They are simple command line versions of the game hangman that support user mode and AI (scripting) mode, respectively.
 
 HangmanUser is an interactive game of hangman populated with predetermined phrases where you guess each letter. 
 

@@ -5,12 +5,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public abstract class Hangman extends Game {
-
-    abstract char getGuess();
-
-    public Hangman(String playerID) {
-        super(playerID);
-    }
+	
+	abstract char getGuess();
+	
+	public Hangman(String playerID) {
+		super(playerID);
+	}
 
 	public String randomPhrase() {
 		// list of possible phrases

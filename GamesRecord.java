@@ -54,4 +54,20 @@ public class GamesRecord {
         return topList;
     }
 
+    public String toString() {
+        int i = 0;
+        int size = gamesRecord.size();
+        StringBuilder builder = new StringBuilder();
+        while(i < size) {
+            Game thisGame = gamesRecord.get(i);
+            String thisID = thisGame.getPlayerID();
+            int thisScore = thisGame.getScore();
+            builder.append(thisID);
+            builder.append(": ");
+            builder.append(Integer.toString(thisScore));
+            builder.append("\n");
+            i++;
+        }
+        return builder.toString();
+    }
 }

@@ -43,7 +43,7 @@ public class HangmanAI extends Hangman {
 
     public static void main(String[] args) {
         GamesRecord record = new GamesRecord();
-        HangmanAI player = new HangmanAI("AI");
+        HangmanAI player = new HangmanAI("Game 1");
         ArrayList<String> phraseList = player.readPhrases("hangPhrases.txt");
 
         int i = 0;
@@ -51,9 +51,9 @@ public class HangmanAI extends Hangman {
             player.play(phraseList.get(i));
             record.add(player);
             i++;
-            player = new HangmanAI("AI");
+            player = new HangmanAI("Game " + Integer.toString(i));
         }
-        System.out.println(record.gamesRecord);
+        System.out.printf("%s", record);
         System.out.println("Average guesses: " + record.average());
     }
 }

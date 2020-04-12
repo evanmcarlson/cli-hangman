@@ -4,7 +4,6 @@ public class HangmanUser extends Hangman {
 
     public  HangmanUser(String playerID) {
         super(playerID);
-
     }
 
     public char getGuess() {
@@ -36,7 +35,7 @@ public class HangmanUser extends Hangman {
                 break;
             }
         }
-        System.out.println(record.gamesRecord);
+        System.out.printf("%s", record);
         System.out.println("Average guesses: " + record.average());
     }
 }
